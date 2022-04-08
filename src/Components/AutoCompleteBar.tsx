@@ -42,7 +42,6 @@ export function AutoCompleteBar({ data }: DataProps) {
   return (
     <div className="container">
       <h1>Autocomplete Box</h1>
-      <div>
         <input
           id="input"
           autoComplete="off"
@@ -50,7 +49,6 @@ export function AutoCompleteBar({ data }: DataProps) {
           onChange={onTextChanged}
           type={"text"}
         />
-      </div>
       {search && (
         <ul>
           {search?.suggestions.map((item: ItemProps) => (
